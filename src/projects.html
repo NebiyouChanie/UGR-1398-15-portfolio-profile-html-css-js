@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/myProjects.css">
 </head>
 <body>
-    <header id="header" class="header">
+    <header id="main-header">
         <div class="header-container">
             <div class="logo-container">
-                <a href="/">
+                <a href="./" id="logo-link">
                     <img src="./images/logo.jpg" alt="Nebiyou Chanie's Personal Logo" class="logo">
                 </a>
             </div>
             <div class="nav-container">
-                <nav class="nav">
+                <nav id="main-nav">
                     <ul class="nav-list">
-                        <li><a href="./" class="nav-item">Home</a></li>
-                        <li><a href="./aboutMe.html" class="nav-item">About Me</a></li>
-                        <li><a href="./projects.html" class="nav-item">Projects</a></li>
-                        <li><a href="./myCv.html" class="nav-item">My Cv</a></li>
-                        <li><a href="./contactMe.html" class="nav-item">Contact Me</a></li>
+                        <li><a href="./" class="nav-link">Home</a></li>
+                        <li><a href="./aboutMe.html" class="nav-link">About Me</a></li>
+                        <li><a href="./projects.html" class="nav-link active">Projects</a></li>
+                        <li><a href="./myCv.html" class="nav-link">My Cv</a></li>
+                        <li><a href="./contactMe.html" class="nav-link">Contact Me</a></li>
                     </ul>
                 </nav>
                 <div class="menu-icon-container">
@@ -29,77 +31,81 @@
             </div>
         </div>
     </header>
-    
-    <aside id="sidebar" class="sidebar">
-        <div class="sidebar-content">
-            <div class="close-icon-container">
-                <img src="./images/icons/close-circle-line.svg" alt="close icon" class="close-icon">
+    <aside id="sidebar">
+        <div class="sidebar-container">
+            <div class="top-sidebar">
+                <div class="close-icon-container">
+                    <img src="./images/icons/close-circle-line.svg" alt="close icon"   class="close-icon">
+                </div>
+                <img src="./images/logo.jpg" alt="logo" class="sidebar-logo">
             </div>
-            <img src="./images/logo.jpg" alt="logo" class="sidebar-logo">
-            <ul class="sidebar-nav-list">
-                <li><a href="./" class="sidebar-nav-item">Home</a></li>
-                <li><a href="./aboutMe.html" class="sidebar-nav-item">About Me</a></li>
-                <li><a href="./projects.html" class="sidebar-nav-item">Projects</a></li>
-                <li><a href="./myCv.html" class="sidebar-nav-item">My Cv</a></li>
-                <li><a href="./contactMe.html" class="sidebar-nav-item">Contact Me</a></li>
+            <ul class="sidebar-nav">
+                <li><a href="./" class="sidebar-nav-link">Home</a></li>
+                <li><a href="./aboutMe.html" class="sidebar-nav-link">About Me</a></li>
+                <li><a href="./projects.html" class="sidebar-nav-link active">Projects</a></li>
+                <li><a href="./myCv.html" class="sidebar-nav-link">My Cv</a></li>
+                <li><a href="./contactMe.html" class="sidebar-nav-link">Contact Me</a></li>
             </ul>
         </div>
     </aside>
     
     <main id="projects-main" class="projects-main">
-        <section id="intro-section" class="intro-section">
-            <h2 class="section-title">My Projects</h2>
-            <p class="intro-text">
-                Explore some of the projects I've worked on, showcasing different skills in web development and design.
-            </p>   
-        </section>
-        
-        <section id="bootcamp-projects-section" class="bootcamp-projects-section">
-            <h2 class="section-title">Projects I built from bootcamp course.</h2>
+        <div class="container">
+
+            <section id="intro-section" class="intro-section">
+                <h1 class="section-title ">My Projects</h1>
+                <p class="intro-text  body-text">
+                    Explore some of the projects I've worked on, showcasing different skills in web development and design.
+                </p>   
+            </section>
             
-            <article id="netflix-clone" class="project">
-                <div class="project-video-container">
-                    <figure class="project-figure">
-                        <video src="./videos/Netflix-clone-Demo.mkv" aria-label="Demo of the Netflix clone project" controls class="project-video"></video>
-                        <figcaption class="project-figcaption">
-                            <h3 class="project-title">Netflix Clone</h3>
-                            <a href="https://nebiyouchanie.github.io/Netflix-Clone/" target="_blank" rel="noopener noreferrer" class="project-link">Try it yourself</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="project-details">
-                    <p class="project-description">
-                        This is a demo of a Netflix clone application built using React and Tailwind CSS. It features responsive design and dynamic content loading.
-                    </p>       
-                    <ul class="tech-stack-list"> 
-                        <li class="tech-stack-item">
-                            <img src="./images/icons/html5-line.svg" alt="html" class="tech-stack-icon">
-                        </li>
-                        <li class="tech-stack-item">
-                            <img src="./images/icons/tailwind-css-line.svg" alt="Tailwind" class="tech-stack-icon">
-                        </li>
-                        <li class="tech-stack-item">
-                            <img src="./images/icons/reactjs-line.svg" alt="React" class="tech-stack-icon">
-                        </li>
-                        <li class="tech-stack-item">
-                            <img src="./images/icons/movie-line.svg" alt="Movie API" class="tech-stack-icon">
-                        </li>
-                    </ul>
-                </div>
-            </article>
-        
-            <article id="evangadi-forum" class="project">
+            <section id="bootcamp-projects-section" class="bootcamp-projects-section">
+            <h3 class="project-section-title ">Projects I built from bootcamp course.</h3>
+            <div class="project-container">
+                
+                <article id="netflix-clone" class="project">
+                    <div class="project-video-container">
+                        <figure class="project-figure">
+                            <video src="./videos/Netflix-clone-Demo.mkv" aria-label="Demo of the Netflix clone project" controls class="project-video"></video>
+                            <figcaption class="project-figcaption">
+                                <h3 class="project-title Heading-6">Netflix Clone</h3>
+                                <a href="https://nebiyouchanie.github.io/Netflix-Clone/" target="_blank" rel="noopener noreferrer" class="project-link">Try it yourself</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="project-details Heading-4">
+                        <p class="project-description body-text">
+                            This is a demo of a Netflix clone application built using React and Tailwind CSS. It features responsive design and dynamic content loading.
+                        </p>       
+                        <ul class="tech-stack-list"> 
+                            <li class="tech-stack-item">
+                                <img src="./images/icons/html5-line.svg" alt="html" class="tech-stack-icon">
+                            </li>
+                            <li class="tech-stack-item">
+                                <img src="./images/icons/tailwind-css-line.svg" alt="Tailwind" class="tech-stack-icon">
+                            </li>
+                            <li class="tech-stack-item">
+                                <img src="./images/icons/reactjs-line.svg" alt="React" class="tech-stack-icon">
+                            </li>
+                            <li class="tech-stack-item">
+                                <img src="./images/icons/movie-line.svg" alt="Movie API" class="tech-stack-icon">
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                
+                <article id="evangadi-forum" class="project">
                 <div class="project-video-container">
                     <figure class="project-figure">
                         <video src="./videos/Evangadi-Forum-Demo.mkv" aria-label="Demo of the Evangadi Forum project" controls class="project-video"></video>
                         <figcaption class="project-figcaption">
-                            <h3 class="project-title">Evangadi Forum</h3>
+                            <h3 class="project-title Heading-6">Evangadi Forum</h3>
                             <a href="https://670d5059e3e68c7c51cfe211--evangadiforumnebiyou.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">See it yourself</a>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="project-details">
-                    <p class="project-description">
+                    <p class="project-description body-text">
                         This project demonstrates the Evangadi Forum, a platform for discussion and social interaction, built with React and Node.js.
                     </p>       
                     <ul class="tech-stack-list">
@@ -118,7 +124,9 @@
                     </ul>
                 </div>
             </article>
+        </div>
         </section>
+    </div>
     </main>
     
     <footer id="footer" class="footer">
@@ -133,5 +141,6 @@
         </div>
         <p class="footer-text">&copy; 2024 Nebiyou Chanie. All Rights Reserved.</p>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>

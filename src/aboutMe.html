@@ -4,99 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/aboutMe.css">
 </head>
 <body>
-    <header id="header">
+    <header id="main-header">
         <div class="header-container">
             <div class="logo-container">
-                <a href="/">
+                <a href="./" id="logo-link">
                     <img src="./images/logo.jpg" alt="Nebiyou Chanie's Personal Logo" class="logo">
                 </a>
             </div>
             <div class="nav-container">
-                <nav>
+                <nav id="main-nav">
                     <ul class="nav-list">
-                        <li><a href="./" class="nav-item">Home</a></li>
-                        <li><a href="./aboutMe.html" class="nav-item">About Me</a></li>
-                        <li><a href="./projects.html" class="nav-item">Projects</a></li>
-                        <li><a href="./myCv.html" class="nav-item">My Cv</a></li>
-                        <li><a href="./contactMe.html" class="nav-item">Contact Me</a></li>
+                        <li><a href="./" class="nav-link">Home</a></li>
+                        <li><a href="./aboutMe.html" class="nav-link active">About Me</a></li>
+                        <li><a href="./projects.html" class="nav-link">Projects</a></li>
+                        <li><a href="./myCv.html" class="nav-link">My Cv</a></li>
+                        <li><a href="./contactMe.html" class="nav-link">Contact Me</a></li>
                     </ul>
                 </nav>
-                <div class="menu-icon">
-                    <img src="./images/icons/menu-line.svg" alt="menu icon">
+                <div class="menu-icon-container">
+                    <img src="./images/icons/menu-line.svg" alt="menu icon" class="menu-icon">
                 </div>
             </div>
         </div>
     </header>
-
-    <aside id="side-nav">
-        <div class="side-nav-container">
-            <div class="close-icon-container">
-                <img src="./images/icons/close-circle-line.svg" alt="close icon" class="close-icon">
+    <aside id="sidebar">
+        <div class="sidebar-container">
+            <div class="top-sidebar">
+                <div class="close-icon-container">
+                    <img src="./images/icons/close-circle-line.svg" alt="close icon"   class="close-icon">
+                </div>
+                <img src="./images/logo.jpg" alt="logo" class="sidebar-logo">
             </div>
-            <img src="./images/logo.jpg" alt="logo" class="side-nav-logo">
-            <ul class="side-nav-list">
-                <li><a href="./" class="side-nav-item">Home</a></li>
-                <li><a href="./aboutMe.html" class="side-nav-item">About Me</a></li>
-                <li><a href="./projects.html" class="side-nav-item">Projects</a></li>
-                <li><a href="./myCv.html" class="side-nav-item">My Cv</a></li>
-                <li><a href="./contactMe.html" class="side-nav-item">Contact Me</a></li>
+            <ul class="sidebar-nav">
+                <li><a href="./" class="sidebar-nav-link">Home</a></li>
+                <li><a href="./aboutMe.html" class="sidebar-nav-link active">About Me</a></li>
+                <li><a href="./projects.html" class="sidebar-nav-link">Projects</a></li>
+                <li><a href="./myCv.html" class="sidebar-nav-link">My Cv</a></li>
+                <li><a href="./contactMe.html" class="sidebar-nav-link">Contact Me</a></li>
             </ul>
         </div>
     </aside>
 
     <main id="main-content">
-        <section class="intro-section">
-            <div class="intro-container">
-                <header class="intro-header">
-                    <h1>Hello, I'm <span class="highlight">Nebiyou Chanie</span></h1>
-                    <h5 class="intro-description">A <strong>Software Engineer</strong> focused on creating functional, user-friendly web experiences and software solutions.</h5>
-                </header>
-                <a href="./contactMe.html" class="contact-link">Contact Me</a>
-            </div>
-            <div class="intro-media">
-                <div class="audio-container">
-                    <i class="ri-play-circle-fill audio-icon"></i>
-                    <audio controls class="audio-player">
-                        <source src="./audio/Ethiopian-Airbus-A350-Tribute-Boarding-Music-Full-Version-Et.m4a" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                <ul class="social-media-links">
-                    <li>
-                        <a href="https://github.com/NebiyouChanie" class="social-media-link" aria-label="GitHub profile">
-                             <img src="images/icons/github-fill.svg" alt="GitHub profile" class="social-media-icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://t.me/Nebie27" class="social-media-link" aria-label="Telegram profile">
-                            <img src="images/icons/github-fill.svg" alt="Telegram profile" class="social-media-icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/@NBETH" class="social-media-link" aria-label="YouTube channel">
-                            <img src="images/icons/github-fill.svg" alt="YouTube channel" class="social-media-icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/neba__27/" class="social-media-link" aria-label="Instagram profile">
-                            <img src="images/icons/github-fill.svg" alt="Instagram profile" class="social-media-icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
         <section class="about-me-section">
             <div class="about-me-text">
                 <header>
-                    <h2>About Me</h2>
+                    <h1 >About Me</h1>
                 </header>
-                <p class="about-me-description">
+                <p class="about-me-description body-text">
                     I am a software engineering student at Addis Ababa University with a passion for creating functional and aesthetically pleasing web applications. I focus on building user-centric solutions and have a strong interest in design. I use design tools like Figma to bring my ideas to life and ensure a smooth user experience across all my projects.
                 </p>
-                <blockquote class="quote">“Good design is not just what it looks like and feels like. Design is how it works.” — Steve Jobs</blockquote>
+                <blockquote class="quote body-text">“Good design is not just what it looks like and feels like. Design is how it works.” — Steve Jobs</blockquote>
             </div>
             <div class="about-me-image">
                 <figure>
@@ -104,56 +66,58 @@
                 </figure>
             </div>
         </section>
+        <div class="skills-stack">
 
-        <section class="skills-section">
-            <div class="skills-container">
-                <header>
-                    <h2>Technical Skills</h2>
-                </header>
-                <div class="skills-list">
-                    <ul>
-                        <li>
-                            <p class="skill-description">I have experience building web applications using JavaScript, HTML, and CSS. I focus on creating clean and responsive designs for a seamless user experience.</p>
-                        </li>
-                        <li>
-                            <p class="skill-description">Familiar with web design principles and proficient in using Figma to create UI/UX designs that are both functional and visually appealing.</p>
-                        </li>
-                        <li>
-                            <p class="skill-description">I am also learning React, which helps me build interactive and dynamic front-end applications efficiently.</p>
-                        </li>
-                        <li>
-                            <p class="skill-description">Proficient in using Node.js to develop scalable and efficient backend systems, allowing seamless communication between the client and server.</p>
-                        </li>
-                    </ul>
+            <section class="skills-section">
+                <div class="skills-container">
+                    <header>
+                        <h2 >Technical Skills</h2>
+                    </header>
+                    <div class="skills-list body-text">
+                        <ul class="list-style">
+                            <li>
+                                <p class="skill-description">I have experience building web applications using JavaScript, HTML, and CSS. I focus on creating clean and responsive designs for a seamless user experience.</p>
+                            </li>
+                            <li>
+                                <p class="skill-description">Familiar with web design principles and proficient in using Figma to create UI/UX designs that are both functional and visually appealing.</p>
+                            </li>
+                            <li>
+                                <p class="skill-description">I am also learning React, which helps me build interactive and dynamic front-end applications efficiently.</p>
+                            </li>
+                            <li>
+                                <p class="skill-description">Proficient in using Node.js to develop scalable and efficient backend systems, allowing seamless communication between the client and server.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="tech-stacks-section">
-            <div class="tech-stacks-container">
-                <header>
-                    <h2>Tech Stacks</h2>
-                </header>
-                <p class="tech-stacks-description">Technologies I work with:</p>
-                <div class="tech-stacks-list">
-                    <ul>
-                        <li><img src="./images/icons/reactjs-line.svg" alt="React" class="tech-icon"></li>
-                        <li><img src="./images/icons/nodejs-line.svg" alt="Node.js" class="tech-icon"></li>
-                        <li><img src="./images/icons/database-2-line.svg" alt="MySQL" class="tech-icon"></li>
-                        <li><img src="./images/icons/html5-line.svg" alt="HTML5" class="tech-icon"></li>
-                        <li><img src="./images/icons/tailwind-css-line.svg" alt="Tailwind CSS" class="tech-icon"></li>
-                        <li><img src="./images/icons/javascript-line.svg" alt="JavaScript" class="tech-icon"></li>
-                        <li><img src="./images/icons/git-branch-line.svg" alt="Git" class="tech-icon"></li>
-                        <li><img src="./images/icons/github-line.svg" alt="GitHub" class="tech-icon"></li>
-                    </ul>
+            </section>
+            
+            <section class="tech-stacks-section">
+                <div class="tech-stacks-container">
+                    <header>
+                        <h2 >Tech Stacks</h2>
+                    </header>
+                    <div class="tech-stacks-list">
+                        <p class="tech-stacks-description body-text">Technologies I work with:</p>
+                        <ul>
+                            <li><img src="./images/icons/reactjs-line.svg" alt="React" class="tech-icon"></li>
+                            <li><img src="./images/icons/nodejs-line.svg" alt="Node.js" class="tech-icon"></li>
+                            <li><img src="./images/icons/database-2-line.svg" alt="MySQL" class="tech-icon"></li>
+                            <li><img src="./images/icons/html5-line.svg" alt="HTML5" class="tech-icon"></li>
+                            <li><img src="./images/icons/tailwind-css-line.svg" alt="Tailwind CSS" class="tech-icon"></li>
+                            <li><img src="./images/icons/javascript-line.svg" alt="JavaScript" class="tech-icon"></li>
+                            <li><img src="./images/icons/git-branch-line.svg" alt="Git" class="tech-icon"></li>
+                            <li><img src="./images/icons/github-line.svg" alt="GitHub" class="tech-icon"></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <section class="hobbies-section">
             <div class="hobbies-container">
                 <header>
-                    <h2>Hobbies</h2>
+                    <h2 >Hobbies</h2>
                 </header>
                 <div class="hobbies-list">
                     <article class="hobby-item">
@@ -195,5 +159,7 @@
             </ul>
         </div>
     </footer>
+    <script src="./js/index.js"></script>
+
 </body>
 </html>

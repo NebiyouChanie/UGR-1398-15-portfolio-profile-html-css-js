@@ -4,47 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cv</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/myCv.css">
 </head>
 <body>
-    <header id="header" class="site-header">
+    <header id="main-header">
         <div class="header-container">
             <div class="logo-container">
-                <a href="/">
+                <a href="./" id="logo-link">
                     <img src="./images/logo.jpg" alt="Nebiyou Chanie's Personal Logo" class="logo">
                 </a>
             </div>
             <div class="nav-container">
-                <nav id="main-nav" class="navigation">
+                <nav id="main-nav">
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="./" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="./aboutMe.html" class="nav-link">About Me</a></li>
-                        <li class="nav-item"><a href="./projects.html" class="nav-link">Projects</a></li>
-                        <li class="nav-item"><a href="./myCv.html" class="nav-link">My Cv</a></li>
-                        <li class="nav-item"><a href="./contactMe.html" class="nav-link">Contact Me</a></li>
+                        <li><a href="./" class="nav-link">Home</a></li>
+                        <li><a href="./aboutMe.html" class="nav-link">About Me</a></li>
+                        <li><a href="./projects.html" class="nav-link">Projects</a></li>
+                        <li><a href="./myCv.html" class="nav-link active">My Cv</a></li>
+                        <li><a href="./contactMe.html" class="nav-link">Contact Me</a></li>
                     </ul>
                 </nav>
-                <div class="menu-icon">
-                    <img src="./images/icons/menu-line.svg" alt="menu icon" class="menu-img">
+                <div class="menu-icon-container">
+                    <img src="./images/icons/menu-line.svg" alt="menu icon" class="menu-icon">
                 </div>
             </div>
         </div>
     </header>
-    <aside id="sidebar" class="sidebar">
+    <aside id="sidebar">
         <div class="sidebar-container">
-            <div class="close-icon-container">
-                <img src="./images/icons/close-circle-line.svg" alt="close icon" class="close-icon">
+            <div class="top-sidebar">
+                <div class="close-icon-container">
+                    <img src="./images/icons/close-circle-line.svg" alt="close icon"   class="close-icon">
+                </div>
+                <img src="./images/logo.jpg" alt="logo" class="sidebar-logo">
             </div>
-            <img src="./images/logo.jpg" alt="logo" class="sidebar-logo">
-            <ul class="sidebar-list">
-                <li class="sidebar-item"><a href="./" class="sidebar-link">Home</a></li>
-                <li class="sidebar-item"><a href="./aboutMe.html" class="sidebar-link">About Me</a></li>
-                <li class="sidebar-item"><a href="./projects.html" class="sidebar-link">Projects</a></li>
-                <li class="sidebar-item"><a href="./myCv.html" class="sidebar-link">My Cv</a></li>
-                <li class="sidebar-item"><a href="./contactMe.html" class="sidebar-link">Contact Me</a></li>
+            <ul class="sidebar-nav">
+                <li><a href="./" class="sidebar-nav-link">Home</a></li>
+                <li><a href="./aboutMe.html" class="sidebar-nav-link">About Me</a></li>
+                <li><a href="./projects.html" class="sidebar-nav-link">Projects</a></li>
+                <li><a href="./myCv.html" class="sidebar-nav-link active">My Cv</a></li>
+                <li><a href="./contactMe.html" class="sidebar-nav-link">Contact Me</a></li>
             </ul>
         </div>
     </aside>
     <main id="main-content" class="main-content">
+        <div>
+            <h1>My CV</h1>
+        </div>
         <section id="cv-section" class="cv-section">
             <div class="cv-viewer">
                 <iframe src="./documents/Resume_Nebiyou_Chanie.pdf" id="cv-iframe" class="cv-iframe"></iframe>
@@ -54,12 +61,12 @@
                 <h3 id="cv-summary-heading" class="cv-summary-heading">Summary of My CV</h3>
                 <table id="cv-table" class="cv-table">
                     <thead>
-                        <tr>
+                        <tr class="Heading-6">
                             <th class="cv-table-header">Category</th>
                             <th class="cv-table-header">Details</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="body-text">
                         <tr>
                             <td class="cv-table-data">Education</td>
                             <td class="cv-table-data">Bachelor's Degree in Software Engineering from AAIT (2024)</td>
@@ -88,5 +95,6 @@
             </ul>
         </div>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>

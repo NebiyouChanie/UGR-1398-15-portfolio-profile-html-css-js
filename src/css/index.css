@@ -1,0 +1,254 @@
+body {
+    background-color: var(--black-background);
+    position: relative;
+}
+
+
+header {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+main{
+    margin-top: 64px;
+}
+/* home */
+.intro-section{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.intro-image{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100svh;
+    width: 100%;
+    object-fit: cover;
+    z-index: -10;
+}
+
+.overlay{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black overlay */
+    z-index: -5; /* Ensure it sits above the image */
+}
+
+audio {
+    display: none;
+}
+
+.audio-container img {
+    border-radius: 50%;
+}
+
+.intro-text h1 {
+    font-size: 86px;
+    font-weight: 700;
+    color: var(--white);
+    width: 60%;
+}
+
+.intro-text h5 {
+    margin-bottom: 32px;
+    width: 50%;
+}
+
+.intro-text-container{
+    max-width: 1200px;
+    margin-inline: auto;
+    width: 100%;
+    padding: 0 32px;
+} 
+
+.name-highlight{
+    color: var(--brand-color);
+}
+
+.audio-social-container{
+    position: absolute;
+    bottom: 34px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    z-index: 10;
+}
+
+.audio-container{
+    width: 50px;
+    height: 50px;
+}
+
+.social-links{
+    display: flex;
+    gap: 32px;
+    margin-inline: auto;
+}
+
+.social-links li a img {
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+}
+
+.contact-link{
+    background-color: var(--brand-color);
+    padding: 12px 32px;
+    color: var(--white);
+    border-radius: 4px;
+}
+
+.contact-link:hover{
+    background-color: #09c2cf;
+}
+
+
+/* tablet landscape */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .audio-social-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        width: 60%;
+    }
+    .intro-text-container{
+        max-width: 900px;
+        margin-inline: auto;
+        padding: 0 32px;
+    } 
+    .intro-text h1 {
+        font-size: 69px;
+        width: 65%;
+    }
+  }
+ 
+  
+/* tablet portrait */
+@media (min-width: 600px) and (max-width: 768px) {
+    .audio-social-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        width: 60%;
+    }
+    .intro-text-container{
+        max-width: 900px;
+        margin-inline: auto;
+        padding: 0 32px;
+    } 
+    .intro-text h1 {
+        font-size: 69px;
+        width: 80%;
+    }
+  }
+  
+/* mobile landscape */
+@media (min-width: 480px) and (max-width: 600px) {
+    .intro-text h1 {
+        font-size: 44px;
+        width: 80%;
+        margin-bottom: 12px;
+    }
+    .intro-text-container{
+        margin-inline: auto;
+        padding: 0 16px;
+    } 
+    .intro-text h5 {
+        margin-bottom: 32px;
+        width: 70%;
+    }
+    .audio-social-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+    }
+    .audio-container img, .social-links li a img {
+        width: 40px;
+        height: 40px;
+        
+    }
+    
+    .contact-link{
+        background-color: var(--brand-color);
+        padding: 8px 16px;
+        color: var(--white);
+        border-radius: 4px;
+    }
+    .social-links{
+        display: flex;
+        gap: 16px;
+        margin-inline: auto;
+    }
+  }
+  
+/* mobile portrait */
+@media (min-width: 320px) and (max-width: 480px) {
+    .intro-text h1 {
+        font-size: 44px;
+        width: 80%;
+        margin-bottom: 12px;
+    }
+    .intro-text-container{
+        margin-inline: auto;
+        padding: 0 16px;
+    } 
+    .intro-text h5 {
+        margin-bottom: 32px;
+        width: 100%;
+    }
+    .audio-social-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+    }
+    .audio-container img, .social-links li a img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .contact-link{
+        background-color: var(--brand-color);
+        padding: 8px 16px;
+        color: var(--white);
+        border-radius: 4px;
+    }
+    .social-links{
+        display: flex;
+        gap: 16px;
+        margin-inline: auto;
+    }
+  }
+  
+
+ 
+
+ 
+
+
+
+
+

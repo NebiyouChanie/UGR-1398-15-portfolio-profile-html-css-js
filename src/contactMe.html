@@ -5,70 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/contactMe.css">
 </head>
 <body>
-    <header>
-        <div>
-            <div>
-                <a href="/">
-                    <img src="./images/logo.jpg" alt="Nebiyou Chanie's Personal Logo">
+    <header id="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="./" id="logo-link">
+                    <img src="./images/logo.jpg" alt="Nebiyou Chanie's Personal Logo" class="logo">
                 </a>
             </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="./">Home</a></li>
-                        <li><a href="./aboutMe.html">About Me</a></li>
-                        <li><a href="./projects.html">Projects</a></li>
-                        <li><a href="./myCv.html">My Cv</a></li>
-                        <li><a href="./contactMe.html">Contact Me</a></li>
+            <div class="nav-container">
+                <nav id="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="./" class="nav-link">Home</a></li>
+                        <li><a href="./aboutMe.html" class="nav-link">About Me</a></li>
+                        <li><a href="./projects.html" class="nav-link">Projects</a></li>
+                        <li><a href="./myCv.html" class="nav-link">My Cv</a></li>
+                        <li><a href="./contactMe.html" class="nav-link active">Contact Me</a></li>
                     </ul>
                 </nav>
-                <div>
-                    <img src="./images/icons/menu-line.svg" alt="menu icon">
+                <div class="menu-icon-container">
+                    <img src="./images/icons/menu-line.svg" alt="menu icon" class="menu-icon">
                 </div>
             </div>
         </div>
     </header>
-    <aside>
-        <div>
-            <div>
-                <img src="./images/icons/close-circle-line.svg" alt="close icon">
+    <aside id="sidebar">
+        <div class="sidebar-container">
+            <div class="top-sidebar">
+                <div class="close-icon-container">
+                    <img src="./images/icons/close-circle-line.svg" alt="close icon"   class="close-icon">
+                </div>
+                <img src="./images/logo.jpg" alt="logo" class="sidebar-logo">
             </div>
-            <img src="./images/logo.jpg" alt="logo">
-            <ul>
-                <li><a href="./">Home</a></li>
-                <li><a href="./aboutMe.html">About Me</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./myCv.html">My Cv</a></li>
-                <li><a href=".contactMe.html">Contact Me</a></li>
+            <ul class="sidebar-nav">
+                <li><a href="./" class="sidebar-nav-link">Home</a></li>
+                <li><a href="./aboutMe.html" class="sidebar-nav-link">About Me</a></li>
+                <li><a href="./projects.html" class="sidebar-nav-link">Projects</a></li>
+                <li><a href="./myCv.html" class="sidebar-nav-link">My Cv</a></li>
+                <li><a href="./contactMe.html" class="sidebar-nav-link active">Contact Me</a></li>
             </ul>
         </div>
     </aside>
     <main>
-        <section>
+        <section class="contact-section">
             <div>
                 <h1>Contact Me</h1>
-                <p>Feel free to reach out to me for any inquiries, project collaborations, or just a friendly chat. I'm always open to new opportunities and conversations!</p>
             </div>
-            <div>
+            <div class="contact-text">
+                <p class="body-text">Feel free to reach out to me for any inquiries, project collaborations, or just a friendly chat. I'm always open to new opportunities and conversations!</p>
                 <form action="mailto:your-email@example.com" method="POST" enctype="multipart/form-data">
                     <div>
-                        <label for="email">Email:</label>
                         <input type="email" id="email" name="email" placeholder="Enter your email" required>
                     </div>
                     <div>
-                        <label for="message">Message:</label>
                         <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
                     </div>
                 
-                    <button type="submit">Submit</button>
+                    <a href="mailto:cnebiyu@gmail.com" class="submit-btn">Submit</a>
+
                 </form>
             </div>
         </section>
-        <section>
+        <section class="socaial-section">
             <h3>Connect with Me on Social Media</h3>
-            <ul>
+            <ul class="social-links">
                 <li>
                     <a href="https://github.com/NebiyouChanie" aria-label="GitHub profile">
                         <img src="./images/icons/github-fill.svg" alt="github">
@@ -94,8 +97,8 @@
     </main>
 
     <footer>
-        <div>
-            <ul>
+        <div class="footer-container">
+            <ul class="body-text">
                 <li><a href="./">Home</a></li>
                 <li><a href="./aboutMe.html">About Me</a></li>
                 <li><a href="./projects.html">Projects</a></li>
@@ -104,6 +107,7 @@
             </ul>
         </div>
     </footer>
+    <script src="./js/index.js"></script>
 
 </body>
 </html>
